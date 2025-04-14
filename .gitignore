@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environment
+.venv/
+
+# Logs & Reports
+logs/
+screenshots/
+allure-report/
+allure-results/
+
+# PyCharm / VSCode config
+.idea/
+.vscode/
+
+# CSV and test data (если не нужно коммитить)
+# test_data/users.csv
+
+# System
+.DS_Store
+Thumbs.db

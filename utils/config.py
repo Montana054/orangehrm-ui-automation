@@ -9,7 +9,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
 
 BROWSER_CONFIG = {
-    "chrome": (ChromeService, lambda: r"C:\Tools\chromedriver.exe", ChromeOptions),
+    "chrome": (ChromeService, lambda: None, ChromeOptions),
     "firefox": (FirefoxService, lambda: GeckoDriverManager().install(), FirefoxOptions),
     "edge": (EdgeService, lambda: EdgeChromiumDriverManager().install(), EdgeOptions),
 }
@@ -27,7 +27,8 @@ def get_driver(browser: str = "chrome", headless: bool = False):
         else:
             options.add_argument("--headless=new")
 
-    service = service_class(executable_path=driver_path_func())
+    driver_path = driver_path_func()
+    service = service_class() if driver_path is None else service_class(executable_path=driver_path)
 
     if browser == "chrome":
         return webdriver.Chrome(service=service, options=options)

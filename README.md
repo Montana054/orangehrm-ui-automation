@@ -1,6 +1,8 @@
 # OrangeHRM UI Automation Tests
 
-[![UI Tests](https://github.com/Montana054/orangehrm-ui-automation/actions/workflows/tests.yml/badge.svg)](https://github.com/Montana054/orangehrm-ui-automation/actions)
+## 🚀 CI/CD Integration
+- GitHub Actions: automatic test run on every push
+
 
 
 This project demonstrates UI test automation using Python, Selenium, and Pytest for the [OrangeHRM Open Source Demo](https://opensource-demo.orangehrmlive.com/).  
@@ -19,6 +21,9 @@ It follows the Page Object Model (POM) and includes both functional and end-to-e
 
 ```
 project-root/ 
+├── .github/
+│   └── workflows/
+│       └── tests.yml
 ├── pages/ # Page Object classes 
 │ ├── base_page.py 
 │ ├── login_page.py 
@@ -35,10 +40,7 @@ project-root/
 │ ├── data_helper.py 
 │ └── logger.py 
 ├── data/
-│ └── users.csv # Saved employee info 
-├── .github/
-│   └── workflows/
-│       └── tests.yml
+│ └── users.csv # Saved employee info
 ├── screenshots/ # Error screenshots on failure 
 ├── screenshots_allure/ # Screenshots for report preview 
 ├── requirements.txt 

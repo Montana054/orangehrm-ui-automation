@@ -1,6 +1,6 @@
 # OrangeHRM UI Automation Tests
 
-![UI Tests](https://github.com/Montana054/orangehrm-ui-automation/actions/workflows/tests.yml/badge.svg)
+[![UI Tests](https://github.com/Montana054/orangehrm-ui-automation/actions/workflows/tests.yml/badge.svg)](https://github.com/Montana054/orangehrm-ui-automation/actions)
 
 
 This project demonstrates UI test automation using Python, Selenium, and Pytest for the [OrangeHRM Open Source Demo](https://opensource-demo.orangehrmlive.com/).  
@@ -33,11 +33,16 @@ project-root/
 ├── utils/ # Helpers 
 │ ├── config.py 
 │ ├── data_helper.py 
-│ └── logger.py ├── data/
+│ └── logger.py 
+├── data/
 │ └── users.csv # Saved employee info 
+├── .github/
+│   └── workflows/
+│       └── tests.yml
 ├── screenshots/ # Error screenshots on failure 
 ├── screenshots_allure/ # Screenshots for report preview 
-├── requirements.txt └── README.md
+├── requirements.txt 
+└── README.md
 ```
 
 ## 🚀 How to Run
@@ -81,6 +86,17 @@ allure serve allure-results
 
 ### ✅ Terminal & Report
 ![Terminal Success](screenshots_allure/terminal_run_success.png)
+
+
+## 🚀 Continuous Integration (CI)
+
+This project uses **GitHub Actions** to automatically run all UI tests on each push to the `master` branch.
+
+- CI configuration is located in: `.github/workflows/tests.yml`
+- Tests run in headless mode using `pytest`
+- Allure reports are generated on every run
+- Status badge is shown at the top of this README
+
 
 ## 🔍 Tech Stack
 

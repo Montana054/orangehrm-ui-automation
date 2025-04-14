@@ -1,5 +1,8 @@
 # OrangeHRM UI Automation Tests
 
+![UI Tests](https://github.com/Montana054/orangehrm-ui-automation/actions/workflows/tests.yml/badge.svg)
+
+
 This project demonstrates UI test automation using Python, Selenium, and Pytest for the [OrangeHRM Open Source Demo](https://opensource-demo.orangehrmlive.com/).  
 It follows the Page Object Model (POM) and includes both functional and end-to-end scenarios.
 

@@ -1,5 +1,5 @@
 import time
-
+import os
 import allure
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
@@ -30,6 +30,9 @@ class BasePage:
 
     @allure.step("Upload profile picture")
     def upload_profile_picture(self, profile_locator, upload_locator, image_path=None):
+        if "GITHUB_ACTIONS" in os.environ:
+            logger.info("📷 Skipping profile upload in CI")
+            return
         if not image_path:
             image_path = r"C:\PythonTesting\orangeHrmLive\test_data\employee_200_200.jpg"
         img_element = self.wait.until(EC.presence_of_element_located(profile_locator))

@@ -6,14 +6,14 @@ INFO     TestLogger:base_page.py:61 Entering text 'admin123' into: ('xpath', "//
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
 INFO     TestLogger:login_page.py:22 ✅ Login action completed.
 INFO     TestLogger:conftest.py:66 ✅ PRECONDITION - Login successful
-INFO     TestLogger:test_main.py:60 🚀 Checking employee from CSV: Alexandr55499 / IDcafc4
-INFO     TestLogger:main_page.py:110 🔍 Searching employee by ID: IDcafc4
+INFO     TestLogger:test_main.py:60 🚀 Checking employee from CSV: Alexandr2a0f5 / ID30c87
+INFO     TestLogger:main_page.py:110 🔍 Searching employee by ID: ID30c87
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[text()='PIM']")
-INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDcafc4' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
+INFO     TestLogger:base_page.py:74 Force clearing and entering text 'ID30c87' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
-INFO     TestLogger:base_page.py:210 🔍 Searching for employee ID: IDcafc4 among 1 rows
-DEBUG    TestLogger:base_page.py:214 Checking row: 'IDcafc4\nAlexandr\nPetrov'
-INFO     TestLogger:base_page.py:216 ✅ Employee found: IDcafc4
+INFO     TestLogger:base_page.py:210 🔍 Searching for employee ID: ID30c87 among 1 rows
+DEBUG    TestLogger:base_page.py:214 Checking row: 'ID30c87\nAlexandr\nPetrov'
+INFO     TestLogger:base_page.py:216 ✅ Employee found: ID30c87
 INFO     TestLogger:test_main.py:64 ✅ Test passed: test_employees_from_csv_present_in_table
 INFO     TestLogger:main_page.py:52 🔚 Logging out
 INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')

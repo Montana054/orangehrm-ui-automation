@@ -12,18 +12,18 @@ INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[text()='
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//button[normalize-space()='Add']")
 INFO     TestLogger:base_page.py:61 Entering text 'Alexandr' into: ('css selector', "input[placeholder='First Name']")
 INFO     TestLogger:base_page.py:61 Entering text 'Petrov' into: ('css selector', "input[placeholder='Last Name']")
-INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDa6dcf' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
+INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDcafc4' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[contains(@class, 'oxd-switch-input')]")
-INFO     TestLogger:base_page.py:61 Entering text 'Alexandr67613' into: ('xpath', "//label[text()='Username']/following::input[1]")
+INFO     TestLogger:base_page.py:61 Entering text 'Alexandr55499' into: ('xpath', "//label[text()='Username']/following::input[1]")
 INFO     TestLogger:base_page.py:61 Entering text 'Pass123!' into: ('xpath', "//label[text()='Password']/following::input[1]")
 INFO     TestLogger:base_page.py:61 Entering text 'Pass123!' into: ('xpath', "//label[text()='Confirm Password']/following::input[1]")
 INFO     TestLogger:base_page.py:34 📷 Skipping profile upload in CI
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
-INFO     TestLogger:main_page.py:74 ✅ Basic employee created: Alexandr67613 / IDa6dcf
+INFO     TestLogger:main_page.py:74 ✅ Basic employee created: Alexandr55499 / IDcafc4
 INFO     TestLogger:base_page.py:126 🔍 Checking message: Expected 'Successfully Saved', Actual 'Success
 Successfully Saved
 ×'
-INFO     TestLogger:data_helper.py:24 ✅ Saved to CSV: Alexandr67613, IDa6dcf
+INFO     TestLogger:data_helper.py:24 ✅ Saved to CSV: Alexandr55499, IDcafc4
 INFO     TestLogger:test_main.py:52 ✅ Test passed: test_create_employee_user
 INFO     TestLogger:main_page.py:52 🔚 Logging out
 INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')

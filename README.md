@@ -39,8 +39,11 @@ project-root/
 │ ├── config.py 
 │ ├── data_helper.py 
 │ └── logger.py 
-├── data/
+├── test_data/
 │ └── users.csv # Saved employee info
+├── test_docs/
+│ ├── orangehrm_checklist_ui.xlsx
+│ └── orangehrm_testcase_ui.xlsx
 ├── screenshots/ # Error screenshots on failure 
 ├── screenshots_allure/ # Screenshots for report preview 
 ├── requirements.txt 
@@ -116,6 +119,14 @@ This project supports running tests in multiple browsers using the `--browser` C
 - Microsoft Edge (GUI and headless)
 
 ⚠️ Firefox was tested and partially working. Some tests require timing tweaks (due to loader animation).
+
+## 📑 Test Documentation
+
+These documents demonstrate my ability to write manual test documentation such as checklists and structured test cases.  
+They are based on OrangeHRM UI functionality and demonstrate manual coverage alongside the automated test project — not as a strict 1:1 mapping to coverage.
+
+- [UI Checklist (xlsx)](test_docs/orangehrm_checklist_ui.xlsx)
+- [Test Cases (xlsx)](test_docs/orangehrm_testcase_ui.xlsx)
 
 ## 🔍 Tech Stack
 

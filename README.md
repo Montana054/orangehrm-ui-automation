@@ -99,6 +99,11 @@ This project uses **GitHub Actions** to automatically run all UI tests on each p
 - Allure reports are generated on every run
 - Status badge is shown at the top of this README
 
+## 🌐 Live Allure Report
+
+📊 You can view the latest test results online via GitHub Pages:
+
+👉 [Open Allure Report](https://montana054.github.io/orangehrm-ui-automation/)
 
 ## 🔍 Tech Stack
 

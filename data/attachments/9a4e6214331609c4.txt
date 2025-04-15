@@ -1,0 +1,62 @@
+DEBUG    TestLogger:conftest.py:32 🧪 Launching chrome (headless=True)
+INFO     TestLogger:test_main.py:70 🚀 Running test: employee_login full flow
+INFO     TestLogger:login_page.py:18 🔐 Attempting to log in as: Admin
+INFO     TestLogger:base_page.py:61 Entering text 'Admin' into: ('xpath', "//input[@placeholder='Username']")
+INFO     TestLogger:base_page.py:61 Entering text 'admin123' into: ('xpath', "//input[@placeholder='Password']")
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
+INFO     TestLogger:login_page.py:22 ✅ Login action completed.
+INFO     TestLogger:main_page.py:60 🔹 Filling basic info: Alexandr Petrov
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[text()='PIM']")
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//button[normalize-space()='Add']")
+INFO     TestLogger:base_page.py:61 Entering text 'Alexandr' into: ('css selector', "input[placeholder='First Name']")
+INFO     TestLogger:base_page.py:61 Entering text 'Petrov' into: ('css selector', "input[placeholder='Last Name']")
+INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDedc66' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[contains(@class, 'oxd-switch-input')]")
+INFO     TestLogger:base_page.py:61 Entering text 'Alexandr1a0f7' into: ('xpath', "//label[text()='Username']/following::input[1]")
+INFO     TestLogger:base_page.py:61 Entering text 'Pass123!' into: ('xpath', "//label[text()='Password']/following::input[1]")
+INFO     TestLogger:base_page.py:61 Entering text 'Pass123!' into: ('xpath', "//label[text()='Confirm Password']/following::input[1]")
+INFO     TestLogger:base_page.py:34 📷 Skipping profile upload in CI
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
+INFO     TestLogger:main_page.py:74 ✅ Basic employee created: Alexandr1a0f7 / IDedc66
+INFO     TestLogger:base_page.py:126 🔍 Checking message: Expected 'Successfully Saved', Actual 'Success
+Successfully Saved
+×'
+INFO     TestLogger:main_page.py:79 🔹 Filling additional fields
+INFO     TestLogger:base_page.py:61 Entering text '233821' into: ('xpath', '//label[text()="Driver\'s License Number"]/following::input[1]')
+INFO     TestLogger:base_page.py:61 Entering text '2030-01-01' into: ('xpath', '//label[text()="License Expiry Date"]/following::input[1]')
+INFO     TestLogger:base_page.py:187 🟢 Selected 'Russian' from dropdown 'Nationality'
+INFO     TestLogger:base_page.py:187 🟢 Selected 'Single' from dropdown 'Marital Status'
+INFO     TestLogger:base_page.py:61 Entering text '2000-01-01' into: ('xpath', "//label[text()='Date of Birth']/following::input[1]")
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//label[text()='Male']")
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "div[class='orangehrm-horizontal-padding orangehrm-vertical-padding'] button[type='submit']")
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//a[normalize-space()='Job']")
+INFO     TestLogger:base_page.py:61 Entering text '2022-12-01' into: ('xpath', "//label[text()='Joined Date']/following::input[1]")
+INFO     TestLogger:base_page.py:187 🟢 Selected 'QA Engineer' from dropdown 'Job Title'
+INFO     TestLogger:base_page.py:187 🟢 Selected 'Quality Assurance' from dropdown 'Sub Unit'
+INFO     TestLogger:base_page.py:187 🟢 Selected 'Full-Time Contract' from dropdown 'Employment Status'
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
+INFO     TestLogger:main_page.py:96 ✅ Additional information saved
+INFO     TestLogger:base_page.py:126 🔍 Checking message: Expected 'Successfully Updated', Actual 'Success
+Successfully Updated
+×'
+INFO     TestLogger:data_helper.py:24 ✅ Saved to CSV: Alexandr1a0f7, IDedc66
+INFO     TestLogger:main_page.py:101 🗂 Employee saved to CSV: Alexandr1a0f7 / IDedc66
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[text()='PIM']")
+INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDedc66' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
+INFO     TestLogger:main_page.py:52 🔚 Logging out
+INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//a[contains(text(), 'Logout')]")
+INFO     TestLogger:login_page.py:18 🔐 Attempting to log in as: Alexandr1a0f7
+INFO     TestLogger:base_page.py:61 Entering text 'Alexandr1a0f7' into: ('xpath', "//input[@placeholder='Username']")
+INFO     TestLogger:base_page.py:61 Entering text 'Pass123!' into: ('xpath', "//input[@placeholder='Password']")
+INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
+INFO     TestLogger:login_page.py:22 ✅ Login action completed.
+INFO     TestLogger:employee_page.py:17 🔍 Checking if logged-in employee name matches expected
+INFO     TestLogger:base_page.py:91 👤 Logged in username: Alexandr Petrov
+INFO     TestLogger:employee_page.py:23 ✅ Username match: True (expected: 'Alexandr Petrov', actual: 'Alexandr Petrov')
+INFO     TestLogger:employee_page.py:29 🔚 Logging out as employee
+INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')
+INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//a[contains(text(), 'Logout')]")
+INFO     TestLogger:test_main.py:88 ✅ The test completed successfully!: employee_login
+DEBUG    TestLogger:conftest.py:37 🔴 Quitting chrome driver

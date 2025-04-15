@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Apr 15 11:58:43 UTC 2025","Tue Apr 15 11:58:45 UTC 2025","1872","tests","test_main","","","","Verify if created employees from CSV exist in the table",""
+"passed","Tue Apr 15 11:58:04 UTC 2025","Tue Apr 15 11:58:04 UTC 2025","5","tests","test_login","","","","Valid login test as Admin",""
+"passed","Tue Apr 15 11:58:34 UTC 2025","Tue Apr 15 11:58:38 UTC 2025","4223","tests","test_main","","","","Create user for employee (light flow)",""
+"passed","Tue Apr 15 11:58:48 UTC 2025","Tue Apr 15 11:59:09 UTC 2025","21113","tests","test_main","","","","Full E2E login flow for new employee",""
+"passed","Tue Apr 15 11:58:16 UTC 2025","Tue Apr 15 11:58:29 UTC 2025","13132","tests","test_main","","","","Add new employee and verify creation",""
+"passed","Tue Apr 15 11:58:06 UTC 2025","Tue Apr 15 11:58:08 UTC 2025","1862","tests","test_login","","","","Invalid login test with wrong password",""
+"passed","Tue Apr 15 11:58:11 UTC 2025","Tue Apr 15 11:58:13 UTC 2025","1375","tests","test_main","","","","Logout from the system as Admin",""

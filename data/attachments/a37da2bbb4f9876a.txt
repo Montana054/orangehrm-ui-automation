@@ -1,15 +1,15 @@
-DEBUG    TestLogger:conftest.py:32 🧪 Launching chrome (headless=True)
-INFO     TestLogger:conftest.py:59 🔹 PRECONDITION - Let's log into the system
+DEBUG    TestLogger:conftest.py:33 🧪 Launching chrome (headless=True)
+INFO     TestLogger:conftest.py:60 🔹 PRECONDITION - Let's log into the system
 INFO     TestLogger:login_page.py:18 🔐 Attempting to log in as: Admin
 INFO     TestLogger:base_page.py:61 Entering text 'Admin' into: ('xpath', "//input[@placeholder='Username']")
 INFO     TestLogger:base_page.py:61 Entering text 'admin123' into: ('xpath', "//input[@placeholder='Password']")
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
 INFO     TestLogger:login_page.py:22 ✅ Login action completed.
-INFO     TestLogger:conftest.py:66 ✅ PRECONDITION - Login successful
-INFO     TestLogger:test_login.py:10 🚀 Running test: test_login_admin
-INFO     TestLogger:test_login.py:13 ✅ Test passed: login as Admin
+INFO     TestLogger:conftest.py:67 ✅ PRECONDITION - Login successful
+INFO     TestLogger:test_main.py:15 🚀 Running test: test_logout
 INFO     TestLogger:main_page.py:52 🔚 Logging out
 INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//a[contains(text(), 'Logout')]")
-INFO     TestLogger:conftest.py:84 🔸 POSTCONDITION: Successfully logged out
-DEBUG    TestLogger:conftest.py:37 🔴 Quitting chrome driver
+INFO     TestLogger:test_main.py:20 ✅ Test passed: test_logout
+INFO     TestLogger:conftest.py:79 🔹 POSTCONDITION SKIPPED for test_logout
+DEBUG    TestLogger:conftest.py:38 🔴 Quitting chrome driver

@@ -1,4 +1,4 @@
-DEBUG    TestLogger:conftest.py:32 🧪 Launching chrome (headless=True)
+DEBUG    TestLogger:conftest.py:33 🧪 Launching chrome (headless=True)
 INFO     TestLogger:test_login.py:19 🚀 Running test: login with invalid password
 INFO     TestLogger:login_page.py:18 🔐 Attempting to log in as: Admin
 INFO     TestLogger:base_page.py:61 Entering text 'Admin' into: ('xpath', "//input[@placeholder='Username']")
@@ -9,4 +9,4 @@ INFO     TestLogger:login_page.py:29 ℹ️ Retrieving error message from the pa
 INFO     TestLogger:base_page.py:113 Retrieved text: 'Invalid credentials'
 INFO     TestLogger:test_login.py:23 🔹 Retrieved error message: Invalid credentials
 INFO     TestLogger:test_login.py:26 ✅ The test completed successfully!: test_login_invalid_password
-DEBUG    TestLogger:conftest.py:37 🔴 Quitting chrome driver
+DEBUG    TestLogger:conftest.py:38 🔴 Quitting chrome driver

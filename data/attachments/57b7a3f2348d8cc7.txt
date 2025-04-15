@@ -1,22 +1,22 @@
-DEBUG    TestLogger:conftest.py:32 🧪 Launching chrome (headless=True)
-INFO     TestLogger:conftest.py:59 🔹 PRECONDITION - Let's log into the system
+DEBUG    TestLogger:conftest.py:33 🧪 Launching chrome (headless=True)
+INFO     TestLogger:conftest.py:60 🔹 PRECONDITION - Let's log into the system
 INFO     TestLogger:login_page.py:18 🔐 Attempting to log in as: Admin
 INFO     TestLogger:base_page.py:61 Entering text 'Admin' into: ('xpath', "//input[@placeholder='Username']")
 INFO     TestLogger:base_page.py:61 Entering text 'admin123' into: ('xpath', "//input[@placeholder='Password']")
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
 INFO     TestLogger:login_page.py:22 ✅ Login action completed.
-INFO     TestLogger:conftest.py:66 ✅ PRECONDITION - Login successful
-INFO     TestLogger:test_main.py:60 🚀 Checking employee from CSV: Alexandr2a0f5 / ID30c87
-INFO     TestLogger:main_page.py:110 🔍 Searching employee by ID: ID30c87
+INFO     TestLogger:conftest.py:67 ✅ PRECONDITION - Login successful
+INFO     TestLogger:test_main.py:60 🚀 Checking employee from CSV: Alexandrfb2d0 / IDa7d8d
+INFO     TestLogger:main_page.py:110 🔍 Searching employee by ID: IDa7d8d
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//span[text()='PIM']")
-INFO     TestLogger:base_page.py:74 Force clearing and entering text 'ID30c87' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
+INFO     TestLogger:base_page.py:74 Force clearing and entering text 'IDa7d8d' into: ('xpath', "//label[text()='Employee Id']/following::input[1]")
 INFO     TestLogger:base_page.py:25 Clicking element: ('css selector', "button[type='submit']")
-INFO     TestLogger:base_page.py:210 🔍 Searching for employee ID: ID30c87 among 1 rows
-DEBUG    TestLogger:base_page.py:214 Checking row: 'ID30c87\nAlexandr\nPetrov'
-INFO     TestLogger:base_page.py:216 ✅ Employee found: ID30c87
+INFO     TestLogger:base_page.py:210 🔍 Searching for employee ID: IDa7d8d among 1 rows
+DEBUG    TestLogger:base_page.py:214 Checking row: 'IDa7d8d\nAlexandr\nPetrov'
+INFO     TestLogger:base_page.py:216 ✅ Employee found: IDa7d8d
 INFO     TestLogger:test_main.py:64 ✅ Test passed: test_employees_from_csv_present_in_table
 INFO     TestLogger:main_page.py:52 🔚 Logging out
 INFO     TestLogger:base_page.py:25 Clicking element: ('class name', 'oxd-userdropdown-tab')
 INFO     TestLogger:base_page.py:25 Clicking element: ('xpath', "//a[contains(text(), 'Logout')]")
-INFO     TestLogger:conftest.py:84 🔸 POSTCONDITION: Successfully logged out
-DEBUG    TestLogger:conftest.py:37 🔴 Quitting chrome driver
+INFO     TestLogger:conftest.py:85 🔸 POSTCONDITION: Successfully logged out
+DEBUG    TestLogger:conftest.py:38 🔴 Quitting chrome driver

@@ -50,26 +50,19 @@ jobs:
           name: allure-report
           path: allure-report
 
-# ВНИМАНИЕ: вставлять в самый конец файла
-# Добавляет публикацию Allure-отчёта в GitHub Pages
+
   deploy:
     needs: test
-    if: success()
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
       - name: Download Allure report artifact
         uses: actions/download-artifact@v3
         with:
           name: allure-report
-          path: ./allure-report
+          path: allure-report
 
-      - name: Deploy to GitHub Pages 🌐
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
+          publish_dir: allure-report

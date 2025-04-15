@@ -80,6 +80,7 @@ allure serve allure-results
 - Full E2E: Admin creates user → user logs in
 
 ## 🖼 Allure Report Preview
+
 ### ✅ Overview
 ![Overview](screenshots_allure/overview.png)
 
@@ -104,6 +105,17 @@ This project uses **GitHub Actions** to automatically run all UI tests on each p
 📊 You can view the latest test results online via GitHub Pages:
 
 👉 [Open Allure Report](https://montana054.github.io/orangehrm-ui-automation/)
+
+
+## 🌐 Cross-browser Support
+
+This project supports running tests in multiple browsers using the `--browser` CLI option.
+
+✅ Successfully tested in:
+- Chrome (default)
+- Microsoft Edge (GUI and headless)
+
+⚠️ Firefox was tested and partially working. Some tests require timing tweaks (due to loader animation).
 
 ## 🔍 Tech Stack
 

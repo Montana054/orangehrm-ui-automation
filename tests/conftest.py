@@ -1,4 +1,5 @@
 import os
+import warnings
 from datetime import datetime
 
 import allure
@@ -105,3 +106,6 @@ def pytest_runtest_makereport(item, call):
         print(f"📸 Screenshot saved: {screenshot_path}")
         with open(screenshot_path, "rb") as f:
             allure.attach(f.read(), name="Screenshot", attachment_type=allure.attachment_type.PNG)
+
+def pytest_configure():
+    warnings.filterwarnings("ignore", category=DeprecationWarning)

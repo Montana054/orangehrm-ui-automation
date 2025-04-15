@@ -44,7 +44,7 @@ jobs:
           allure generate allure-results --clean -o allure-report
           
       - name: 💾 Upload Allure report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: allure-report
           path: allure-report

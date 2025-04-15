@@ -54,6 +54,9 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Download Allure report artifact
         uses: actions/download-artifact@v4
@@ -66,3 +69,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: allure-report
+

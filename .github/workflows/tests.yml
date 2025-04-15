@@ -31,7 +31,7 @@ jobs:
 
       - name: ▶️ Run tests with pytest
         run: |
-          pytest tests/ --headless --alluredir=allure-results
+          pytest tests/ --headless --alluredir=allure-results -p no:warnings
 
       - name: 🔧 Install Allure CLI manually
         run: |

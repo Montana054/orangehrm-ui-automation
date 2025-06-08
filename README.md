@@ -1,3 +1,4 @@
+![GitHub Banner](./github_banner.png)
 # OrangeHRM UI Automation Tests
 
 ## 🚀 CI/CD Integration
